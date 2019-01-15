@@ -1,7 +1,7 @@
 // External Dependancies
 const mongoose = require('mongoose')
 
-const contentsSchema = new Schema({ id: String,
+const contentsSchema = new mongoose.Schema({ id: String,
 content:String,
 answerOrder: Number,
 effectAllowed: String,

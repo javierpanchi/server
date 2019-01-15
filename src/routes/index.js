@@ -8,7 +8,6 @@ const listeningMultipleChoiceMultipleAnswerController = require('../controllers/
 const listeningsummaryController = require('../controllers/listening/listeningsummaryController')
 const multiplechoicesingleanswerController = require('../controllers/listening/multiplechoicesingleanswerController')
 const selectmissingwordController = require('../controllers/listening/selectmissingwordController')
-const summarisespokentextController = require('../controllers/listening/summarisespokentextController')
 const draganddropController = require('../controllers/reading/draganddropController')
 const readingReorderController = require('../controllers/reading/readingReorderController')
 const readingfillintheblanksController = require('../controllers/reading/readingfillintheblanksController')
@@ -23,59 +22,59 @@ const summaryController = require('../controllers/writing/summaryController')
 const writingController = require('../controllers/writing/writingController')
 
 const routes = [
-  {
-    method: 'GET',
-    url: '/api/cars',
-    handler: carController.getCars
-  },
-  {
-    method: 'GET',
-    url: '/api/cars/:id',
-    handler: carController.getSingleCar
-  },
-  {
-    method: 'POST',
-    url: '/api/cars',
-    handler: carController.addCar,
-    schema: carController.addCarSchema
-  },
-  {
-    method: 'PUT',
-    url: '/api/cars/:id',
-    handler: carController.updateCar
-  },
-  {
-    method: 'DELETE',
-    url: '/api/cars/:id',
-    handler: carController.deleteCar
-  },
+  // {
+  //   method: 'GET',
+  //   url: '/api/cars',
+  //   handler: carController.getCars
+  // },
+  // {
+  //   method: 'GET',
+  //   url: '/api/cars/:id',
+  //   handler: carController.getSingleCar
+  // },
+  // {
+  //   method: 'POST',
+  //   url: '/api/cars',
+  //   handler: carController.addCar,
+  //   schema: carController.addCarSchema
+  // },
+  // {
+  //   method: 'PUT',
+  //   url: '/api/cars/:id',
+  //   handler: carController.updateCar
+  // },
+  // {
+  //   method: 'DELETE',
+  //   url: '/api/cars/:id',
+  //   handler: carController.deleteCar
+  // },
   
   /*reordering*/
   {
     "method": "GET",
     "url": "/reading/reordering",
-    "handler": readingReorderingController.getObj
+    "handler": readingReorderController.getObj
   },
   {
     "method": "GET",
     "url": "/reading/reordering/:id",
-    "handler": readingReorderingController.getSingleObj
+    "handler": readingReorderController.getSingleObj
   },
   
   {
     "method": "POST",
     "url": "/reading/reordering",
-    "handler": readingReorderingController.addObj
+    "handler": readingReorderController.addObj
   },
   {
     "method": "PUT",
     "url": "/reading/reordering/:id",
-    "handler": readingReorderingController.updateObj
+    "handler": readingReorderController.updateObj
   },
   {
     "method": "DELETE",
     "url": "/reading/reordering/:id",
-    "handler": readingReorderingController.deleteObj
+    "handler": readingReorderController.deleteObj
   },
   
   
@@ -363,40 +362,6 @@ const routes = [
     "handler": readingmultiplechoicemultipleanswerController.deleteObj
   },
   
-  
-  //Summarize Spoken Text
-  
-  {
-    "method": "GET",
-    "url": "/listening/summarisespokentexts",
-    "handler": summarisespokentextController.getObjs
-  },
-  {
-    "method": "GET",
-    "url": "/listening/summarisespokentext",
-    "handler": summarisespokentextController.getObj
-  },
-  {
-    "method": "GET",
-    "url": "/listening/summarisespokentext/:id",
-    "handler": summarisespokentextController.getSingleObj
-  },
-  {
-    "method": "POST",
-    "url": "/listening/summarisespokentext",
-    "handler": summarisespokentextController.addObj
-  },
-  {
-    "method": "UPDATE",
-    "url": "/listening/summarisespokentext/:id",
-    "handler": summarisespokentextController.updateObj
-  },
-  {
-    "method": "DELETE",
-    "url": "/listening/summarisespokentext/:id",
-    "handler": summarisespokentextController.deleteObj
-  },
-  
   //Fill in the blanks
   
   {
@@ -682,15 +647,15 @@ const routes = [
     "handler": answershortquestionController.deleteObj
   },
   
-  {
-    "method": "GET",
-    "url": "/listening/count/:skill",
-    "handler": xxxController.getObj
-  },
-  {
-    "method": "GET",
-    "handler": xxxController.getObj
-  }
+  // {
+  //   "method": "GET",
+  //   "url": "/listening/count/:skill",
+  //   "handler": xxxController.getObj
+  // },
+  // {
+  //   "method": "GET",
+  //   "handler": xxxController.getObj
+  // }
   
   
   

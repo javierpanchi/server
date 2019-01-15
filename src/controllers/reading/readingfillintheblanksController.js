@@ -2,7 +2,7 @@
 const boom = require('boom')
 
 // Get Data Models
-const Obj = require('../models/reading/Readingfillintheblanks')
+const Obj = require('../../models/reading/Readingfillintheblanks')
 
 // Get all objs
 exports.getObjs = async (req, reply) => {

@@ -2,7 +2,7 @@
 const boom = require('boom')
 
 // Get Data Models
-const Obj = require('../models/speaking/Retelllecture')
+const Obj = require('../../models/speaking/Retelllecture')
 
 // Get all objs
 exports.getObjs = async (req, reply) => {
