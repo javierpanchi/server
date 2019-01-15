@@ -21,7 +21,7 @@ const start = async () => {
   }
 }
 
-mongoose.connect('mongodb://localhost/mycargarage')
+mongoose.connect('mongodb://localhost/pte')
  .then(() => console.log('MongoDB connected…'))
  .catch(err => console.log(err));
  
