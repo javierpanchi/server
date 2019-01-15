@@ -53,7 +53,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/reading/reordering",
-    "handler": readingReorderController.getObj
+    "handler": readingReorderController.getObjs
   },
   {
     "method": "GET",
@@ -83,7 +83,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/listening/mcma",
-    "handler": listeningMultipleChoiceMultipleAnswerController.getObj
+    "handler": listeningMultipleChoiceMultipleAnswerController.getObjs
   },
   {
     "method": "GET",
@@ -97,7 +97,7 @@ const routes = [
     "handler": listeningMultipleChoiceMultipleAnswerController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/listening/mcma/:id",
     "handler": listeningMultipleChoiceMultipleAnswerController.updateObj
   },
@@ -113,11 +113,11 @@ const routes = [
     "url": "/listening/dictations",
     "handler": dictationController.getObjs
   },
-  {
-    "method": "GET",
-    "url": "/listening/dictation",
-    "handler": dictationController.getObj
-  },
+  // {
+  //   "method": "GET",
+  //   "url": "/listening/dictation",
+  //   "handler": dictationController.getObj
+  // },
   {
     "method": "GET",
     "url": "/listening/dictation/:id",
@@ -129,7 +129,7 @@ const routes = [
     "handler": dictationController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/listening/dictation/:id",
     "handler": dictationController.updateObj
   },
@@ -145,12 +145,12 @@ const routes = [
   {
     "method": "GET",
     "url": "/reorder/:reorderId",
-    "handler": readingReorderController.getObj
+    "handler": readingReorderController.getObjs
   },
   {
     "method": "GET",
     "url": "/reading/reorder",
-    "handler": readingReorderController.getObj
+    "handler": readingReorderController.getObjs
   },
   {
     "method": "POST",
@@ -158,7 +158,7 @@ const routes = [
     "handler": readingReorderController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/reading/reorder",
     "handler": readingReorderController.updateObj
   },
@@ -173,7 +173,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/writing/essay",
-    "handler": writingController.getObj
+    "handler": writingController.getObjs
   },
   {
     "method": "GET",
@@ -186,7 +186,7 @@ const routes = [
     "handler": writingController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/writing/essay/:id",
     "handler": writingController.updateObj
   },
@@ -200,7 +200,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/writing/summary",
-    "handler": summaryController.getObj
+    "handler": summaryController.getObjs
   },
   {
     "method": "GET",
@@ -214,7 +214,7 @@ const routes = [
     "handler": summaryController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/writing/summary/:id",
     "handler": summaryController.updateObj
   },
@@ -228,7 +228,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/speaking/readaloud",
-    "handler": readaloudController.getObj
+    "handler": readaloudController.getObjs
   },
   {
     "method": "GET",
@@ -241,7 +241,7 @@ const routes = [
     "handler": readaloudController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/speaking/readaloud/:id",
     "handler": readaloudController.updateObj
   },
@@ -257,7 +257,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/reading/readingfillintheblanks",
-    "handler": readingfillintheblanksController.getObj
+    "handler": readingfillintheblanksController.getObjs
   },
   {
     "method": "GET",
@@ -270,7 +270,7 @@ const routes = [
     "handler": readingfillintheblanksController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/reading/readingfillintheblanks/:id",
     "handler": readingfillintheblanksController.updateObj
   },
@@ -285,7 +285,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/reading/draganddrop",
-    "handler": draganddropController.getObj
+    "handler": draganddropController.getObjs
   },
   {
     "method": "GET",
@@ -298,7 +298,7 @@ const routes = [
     "handler": draganddropController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/reading/draganddrop/:id",
     "handler": draganddropController.updateObj
   },
@@ -312,7 +312,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/reading/readingmultiplechoicesingleanswer",
-    "handler": readingmultiplechoicesingleanswerController.getObj
+    "handler": readingmultiplechoicesingleanswerController.getObjs
   },
   {
     "method": "GET",
@@ -325,7 +325,7 @@ const routes = [
     "handler": readingmultiplechoicesingleanswerController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/reading/readingmultiplechoicesingleanswer/:id",
     "handler": readingmultiplechoicesingleanswerController.updateObj
   },
@@ -339,7 +339,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/reading/readingmultiplechoicemultipleanswer",
-    "handler": readingmultiplechoicemultipleanswerController.getObj
+    "handler": readingmultiplechoicemultipleanswerController.getObjs
   },
   {
     "method": "GET",
@@ -352,7 +352,7 @@ const routes = [
     "handler": readingmultiplechoicemultipleanswerController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/reading/readingmultiplechoicemultipleanswer/:id",
     "handler": readingmultiplechoicemultipleanswerController.updateObj
   },
@@ -369,11 +369,11 @@ const routes = [
     "url": "/listening/fillintheblanks",
     "handler": fillintheblanksController.getObjs
   },
-  {
-    "method": "GET",
-    "url": "/listening/fillintheblank",
-    "handler": fillintheblanksController.getObj
-  },
+  // {
+  //   "method": "GET",
+  //   "url": "/listening/fillintheblank",
+  //   "handler": fillintheblanksController.getObj
+  // },
   {
     "method": "GET",
     "url": "/listening/fillintheblank/:id",
@@ -385,7 +385,7 @@ const routes = [
     "handler": fillintheblanksController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/listening/fillintheblank/:id",
     "handler": fillintheblanksController.updateObj
   },
@@ -400,7 +400,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/listening/highlightcorrectsummary",
-    "handler": highlightcorrectsummaryController.getObj
+    "handler": highlightcorrectsummaryController.getObjs
   },
   {
     "method": "GET",
@@ -413,7 +413,7 @@ const routes = [
     "handler": highlightcorrectsummaryController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/listening/highlightcorrectsummary/:id",
     "handler": highlightcorrectsummaryController.updateObj
   },
@@ -429,7 +429,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/listening/multiplechoicesingleanswer",
-    "handler": multiplechoicesingleanswerController.getObj
+    "handler": multiplechoicesingleanswerController.getObjs
   },
   {
     "method": "GET",
@@ -442,7 +442,7 @@ const routes = [
     "handler": multiplechoicesingleanswerController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/listening/multiplechoicesingleanswer/:id",
     "handler": multiplechoicesingleanswerController.updateObj
   },
@@ -458,11 +458,11 @@ const routes = [
     "url": "/listening/selectmissingwords",
     "handler": selectmissingwordController.getObjs
   },
-  {
-    "method": "GET",
-    "url": "/listening/selectmissingword",
-    "handler": selectmissingwordController.getObj
-  },
+  // {
+  //   "method": "GET",
+  //   "url": "/listening/selectmissingword",
+  //   "handler": selectmissingwordController.getObj
+  // },
   {
     "method": "GET",
     "url": "/listening/selectmissingword/:id",
@@ -474,7 +474,7 @@ const routes = [
     "handler": selectmissingwordController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/listening/selectmissingword/:id",
     "handler": selectmissingwordController.updateObj
   },
@@ -491,11 +491,11 @@ const routes = [
     "url": "/listening/highlightincorrectwords",
     "handler": highlightincorrectwordsController.getObjs
   },
-  {
-    "method": "GET",
-    "url": "/listening/highlightincorrectword",
-    "handler": highlightincorrectwordsController.getObj
-  },
+  // {
+  //   "method": "GET",
+  //   "url": "/listening/highlightincorrectword",
+  //   "handler": highlightincorrectwordsController.getObj
+  // },
   {
     "method": "GET",
     "url": "/listening/highlightincorrectword/:id",
@@ -508,7 +508,7 @@ const routes = [
     "handler": highlightincorrectwordsController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/listening/highlightincorrectword/:id",
     "handler": highlightincorrectwordsController.updateObj
   },
@@ -524,11 +524,11 @@ const routes = [
     "url": "/speaking/repeatsentences",
     "handler": repeatController.getObjs
   },
-  {
-    "method": "GET",
-    "url": "/speaking/repeatsentence",
-    "handler": repeatController.getObj
-  },
+  // {
+  //   "method": "GET",
+  //   "url": "/speaking/repeatsentence",
+  //   "handler": repeatController.getObj
+  // },
   {
     "method": "GET",
     "url": "/speaking/repeatsentence/:id",
@@ -540,7 +540,7 @@ const routes = [
     "handler": repeatController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/speaking/repeatsentence/:id",
     "handler": repeatController.updateObj
   },
@@ -559,7 +559,7 @@ const routes = [
   {
     "method": "GET",
     "url": "/speaking/describeimage",
-    "handler": describeimageController.getObj
+    "handler": describeimageController.getObjs
   },
   {
     "method": "GET",
@@ -572,7 +572,7 @@ const routes = [
     "handler": describeimageController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/speaking/describeimage/:id",
     "handler": describeimageController.updateObj
   },
@@ -589,11 +589,11 @@ const routes = [
     "url": "/speaking/retelllectures",
     "handler": retelllectureController.getObjs
   },
-  {
-    "method": "GET",
-    "url": "/speaking/retelllecture",
-    "handler": retelllectureController.getObj
-  },
+  // {
+  //   "method": "GET",
+  //   "url": "/speaking/retelllecture",
+  //   "handler": retelllectureController.getObj
+  // },
   {
     "method": "GET",
     "url": "/speaking/retelllecture/:id",
@@ -605,7 +605,7 @@ const routes = [
     "handler": retelllectureController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/speaking/retelllecture/:id",
     "handler": retelllectureController.updateObj
   },
@@ -621,11 +621,11 @@ const routes = [
     "url": "/speaking/answershortquestions",
     "handler": answershortquestionController.getObjs
   },
-  {
-    "method": "GET",
-    "url": "/speaking/answershortquestion",
-    "handler": answershortquestionController.getObj
-  },
+  // {
+  //   "method": "GET",
+  //   "url": "/speaking/answershortquestion",
+  //   "handler": answershortquestionController.getObj
+  // },
   {
     "method": "GET",
     "url": "/speaking/answershortquestion/:id",
@@ -634,10 +634,10 @@ const routes = [
   {
     "method": "POST",
     "url": "/speaking/answershortquestions",
-    "handler": answershortquestionController.addObjs
+    "handler": answershortquestionController.addObj
   },
   {
-    "method": "UPDATE",
+    "method": "PUT",
     "url": "/speaking/answershortquestion",
     "handler": answershortquestionController.updateObj
   },
