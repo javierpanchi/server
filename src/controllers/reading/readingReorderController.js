@@ -14,6 +14,11 @@ exports.getObjs = async (req, reply) => {
   }
 }
 
+exports.getXYZ = async (req, reply) => {
+    console.log(".......abc123")
+  
+}
+
 // Get single obj by ID
 exports.getSingleObj = async (req, reply) => {
   try {

@@ -6,9 +6,9 @@ const mongoose = require('mongoose');
 const routes = require('./routes');
 
 // Declare a route
-fastify.get('/', async (request, reply) => {
-  return { hello: 'world' }
-})
+// fastify.get('/', async (request, reply) => {
+//   return { hello: 'world' }
+// })
 
 // Run the server!
 const start = async () => {
